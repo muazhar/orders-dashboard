@@ -6,10 +6,16 @@ git_source(:github) do |repo_name|
 end
 
 
+gem 'jquery-rails', '~> 4.3', '>= 4.3.1'
+gem 'bootstrap', '~> 4.0.0.beta2.1'
+gem 'haml', '~> 5.0', '>= 5.0.4'
+
+# Templating with json
+gem 'rabl', '~> 0.13.1'
+
 # Interface to PostgreSQL
 gem 'pg', '~> 0.21.0'
 
-gem 'awesome_print', '~> 1.8'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.4'
 # Use sqlite3 as the database for Active Record
@@ -38,6 +44,7 @@ gem 'jbuilder', '~> 2.5'
 # gem 'capistrano-rails', group: :development
 
 group :development, :test do
+  gem 'awesome_print', '~> 1.8'
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   # Adds support for Capybara system testing and selenium driver
@@ -46,6 +53,7 @@ group :development, :test do
 end
 
 group :development do
+  gem 'erb2haml', '~> 0.1.5'
   # Access an IRB console on exception pages or by using <%= console %> anywhere in the code.
   gem 'web-console', '>= 3.3.0'
   gem 'listen', '>= 3.0.5', '< 3.2'
