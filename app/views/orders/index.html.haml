@@ -1,0 +1,17 @@
+%select#stateSelect.custom-select
+  %option{selected: "selected", :value => ""} All
+  %option{:value => "pending"} Pending
+  %option{:value => "delivered"} Delivered
+
+%hr
+
+%table.table
+  %thead
+    %tr
+      %th #
+      %th Ordered At
+      %th Address
+      %th Price
+      %th State
+      %th Action
+  %tbody#orders
