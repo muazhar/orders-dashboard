@@ -1,24 +1,19 @@
-# README
+# Orders Dashboard
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Rails version: 5.1.4
+## Ruby version: 2.3.1
 
-Things you may want to cover:
+Run:
+`bundle install`
 
-* Ruby version
+Rename database.yml.example
+`mv config/database.yml.example config/database.yml`
 
-* System dependencies
+Create the database:
+`rake db:create`
 
-* Configuration
+Run migrations:
+`rake db:migrate`
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Add records to db:
+`rake db:seed`
